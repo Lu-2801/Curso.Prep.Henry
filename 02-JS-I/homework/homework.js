@@ -67,7 +67,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1 == str2
+  return str1.length == str2.length
 }
 
 function menosQueNoventa(num) {
@@ -216,10 +216,10 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (typeof letra === 'string' && letra.length === 1 && letra.match(/[aeiou]/)) {
-    return 'Es Vocal'
+    return 'Es vocal'
   }
   else {
-    return 'Dato Incorrecto'
+    return 'Dato incorrecto'
   }
 }
 

@@ -19,9 +19,9 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
-    return console.log('Allowed')
+    return 'Allowed'
   }
-    return console.log('Not allowed')
+    return 'Not allowed'
 }
   
 function conection(status) {
@@ -68,19 +68,13 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color) {
     case 'blue': 
-      console.log('This is blue');
-      break;
     case 'red':
-      console.log('This is red');
-      break;
     case 'green':
-      console.log('This is green');
-      break;
     case 'orange':
-      console.log('This is orange');
+      return console.log('This is' + ' ' + {color});
       break;
     default:
-      console.log('Color not found');
+      return 'Color not found';
   }
 }
 
@@ -124,13 +118,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if (numero % 3 === 0 && numero % 5 === 0) {
-    console.log('fizzbuzz')
+    return 'fizzbuzz'
   }
   else if (numero % 3 === 0) {
-    console.log('fizz')
+    return 'fizz'
   }
   else if (numero % 5 === 0) {
-    console.log('buzz')
+    return 'buzz'
   }
   else {
   return numero 
@@ -146,13 +140,17 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   switch(num1, num2, num3) {
     case(num1 > num2 && num1 > num3 && num1 > 0):
-      console.log('Número 1 es mayor y positivo')
+      console.log('Número 1 es mayor y positivo');
+      break;
     case(num1 < 0 || num2 < 0 || num3 < 0):
-      console.log('Hay negativos')
+      console.log('Hay negativos');
+      break;
     case(num3 > num1 && num3 > num2): 
-      console.log(num3 + 1)
+      console.log(num3 + 1);
+      break;
     case(num1 === 0 || num2 === 0 || num3 === 0):
       console.log('Error')
+      break;
     default:
       return false
   }
@@ -164,26 +162,20 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero === 0 || numero === 1) {
-    return false
-  }
-  for (var i = 2; i < numero; i++) {
-    if (numero % i === 0) {
-      return false
-    }
+  if (numero === 0 || numero === 1) return false
+  for (let i = 2; i < numero; i++) 
+    if (numero % i === 0) return false
     return true
-  }
-}
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if (valor === true) {
-    console.log('Soy verdadero')
+    return 'Soy verdadero'
   }
   else if (valor === false) {
-    console.log('Soy falso')
+    return 'Soy falso'
   }
 }
 
@@ -195,6 +187,7 @@ function tablaDelSeis(){
   for (var i = 0; i <= 10; i++) {
     tablaDelSeis.push(6 * i)
   }
+  return tablaDelSeis
 }
 
 function tieneTresDigitos(numero){

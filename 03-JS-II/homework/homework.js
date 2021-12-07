@@ -71,7 +71,7 @@ function colors(color) {
     case 'red':
     case 'green':
     case 'orange':
-      return console.log('This is' + ' ' + {color});
+      return console.log('This is' + ' ' + color);
       break;
     default:
       return 'Color not found';
@@ -118,16 +118,16 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if (numero % 3 === 0 && numero % 5 === 0) {
-    return 'fizzbuzz'
+    return 'fizzbuzz';
   }
   else if (numero % 3 === 0) {
-    return 'fizz'
+    return 'fizz';
   }
   else if (numero % 5 === 0) {
-    return 'buzz'
+    return 'buzz';
   }
   else {
-  return numero 
+  return numero;
   }
 }
 
@@ -152,7 +152,7 @@ function operadoresLogicos(num1, num2, num3) {
       console.log('Error')
       break;
     default:
-      return false
+      return false;
   }
 }
 
@@ -162,20 +162,20 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero === 0 || numero === 1) return false
+  if (numero === 0 || numero === 1) return false;
   for (let i = 2; i < numero; i++) 
-    if (numero % i === 0) return false
-    return true
+    if (numero % i === 0) return false;
+    return true;
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if (valor === true) {
-    return 'Soy verdadero'
+    return 'Soy verdadero';
   }
   else if (valor === false) {
-    return 'Soy falso'
+    return 'Soy falso';
   }
 }
 
@@ -185,12 +185,12 @@ function tablaDelSeis(){
   //Escribe tu código aquí
   const tablaDelSeis = []
   for (var i = 0; i <= 10; i++) {
-    tablaDelSeis.push(6 * i)
+    tablaDelSeis.push(6 * i);
   }
-  return tablaDelSeis
+  return tablaDelSeis;
 }
 
-function tieneTresDigitos(numero){
+function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   let cadena = numero.toString();

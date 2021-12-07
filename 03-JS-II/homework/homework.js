@@ -166,8 +166,9 @@ function esPrimo(numero) {
   for (let i = 2; i < numero; i++) 
     if (numero % i === 0) return false;
     return true;
+}
 
-function esVerdadero(valor){
+function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí

@@ -71,7 +71,7 @@ function colors(color) {
     case 'red':
     case 'green':
     case 'orange':
-      return console.log('This is' + ' ' + color);
+      return 'This is' + ' ' + color;
       break;
     default:
       return 'Color not found';
@@ -140,17 +140,13 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   switch(num1, num2, num3) {
     case(num1 > num2 && num1 > num3 && num1 > 0):
-      console.log('Número 1 es mayor y positivo');
-      break;
+      return 'Número 1 es mayor y positivo';
     case(num1 < 0 || num2 < 0 || num3 < 0):
-      console.log('Hay negativos');
-      break;
+      return 'Hay negativos';
     case(num3 > num1 && num3 > num2): 
-      console.log(num3 + 1);
-      break;
+      return (num3 + 1);
     case(num1 === 0 || num2 === 0 || num3 === 0):
-      console.log('Error')
-      break;
+      return 'Error';
     default:
       return false;
   }
